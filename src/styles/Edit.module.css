@@ -1,0 +1,149 @@
+/* Edit Styles */
+
+.editContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  top: 0%;
+  z-index: 999;
+  backdrop-filter: blur(7px);
+  filter: drop-shadow(8px 5px 2px #0000001c);
+}
+
+.editBorder {
+  height: 30%;
+  width: 35%;
+  border: solid 2px #8aa2b0;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  position: relative;
+  padding: 5px;
+}
+
+.editTitle {
+  padding: 10px;
+  color: #b2d8f2;
+  opacity: 0.9;
+  position: absolute;
+  top: 4%;
+  font-weight: 600;
+}
+
+.edit {
+  padding: 12px;
+  color: #6a98ad;
+  opacity: 0.9;
+  position: absolute;
+  top: 19%;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+.days {
+  margin-top: 2vh;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.day {
+  text-align: center;
+  margin-left: 2vw;
+  margin-top: 1.2vh;
+  margin-right: 2vw;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #555;
+  width: 3vw;
+  cursor: pointer;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.curDay {
+  background-color: #8aa2b0;
+  color: #fff;
+  opacity: 1;
+}
+
+.saveBtn {
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #6388a9;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  position: absolute;
+  bottom: 7%;
+  text-transform: uppercase;
+}
+
+.closeBtn {
+  padding: 4.8px;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #695e7e;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  position: absolute;
+  top: 8%;
+  right: 4%;
+}
+
+@media only screen and (max-width: 950px) {
+  .editBorder {
+    height: 28%;
+    width: 85%;
+  }
+
+  .day {
+    width: 13.2vw;
+    height: 3vh;
+    font-size: 14px;
+  }
+
+  .saveBtn {
+    padding: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 15px;
+    bottom: 8%;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .day:hover {
+    background-color: #b2d8f2;
+    color: #fff;
+  }
+  .saveBtn:hover {
+    background-color: #8aa2b0;
+  }
+  .closeBtn:hover {
+    background-color: #695e7e;
+  }
+}

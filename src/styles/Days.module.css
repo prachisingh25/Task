@@ -1,0 +1,64 @@
+/* Days Styles */
+
+.daysContainer {
+  text-align: center;
+  width: 36vw;
+  margin-top: 2.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vh;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.day {
+  color: #fff; 
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  opacity: 0.9; 
+}
+
+
+.clickedDay {
+  border: 1px solid #fff; 
+  color: #1e375d;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  opacity: 1;
+}
+
+.droppable {
+  background-color: #1e375d; 
+}
+
+@media only screen and (max-width: 950px) {
+  .daysContainer {
+    width: 88vw;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .day:hover {
+    color: #8da5c9; 
+    border: none;
+    opacity: 1; 
+  }
+  .day:last-child:hover {
+    color: #c1d4e6; 
+  }
+}

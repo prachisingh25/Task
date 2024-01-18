@@ -1,0 +1,61 @@
+/* App Styles */
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+  background-image: linear-gradient(
+    145deg,
+    #000000 0%,
+    #333333 90%,
+    #1f0a1f 100%
+  );
+}
+
+.title {
+  padding-top: 5.8vh;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.title2 {
+  padding-top: 1vh;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  opacity: 0.9;
+}
+
+.title2:last-child {
+  padding-bottom: 4.2vh;
+  opacity: 0.8;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.removeMsgHint {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation-name: msgConfirmDelete;
+  animation-duration: 2.8s;
+  animation-fill-mode: forwards;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 1.2vh;
+}
+
+@keyframes msgConfirmDelete {
+  0% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
